@@ -147,3 +147,23 @@ footer{
     background-color: #e8491d;
     text-align: center;
 }
+
+@media screen and (max-width: 760px) {
+
+    .navbar {
+        flex-direction: row;
+      }
+    .content {
+      flex-direction: column;
+      max-width: 100;
+      overflow-x: hidden;
+    }
+  
+    .menu-items {
+      flex-direction: column;
+    }
+  
+    .menu-item {
+      width: 100%;
+    }
+  }

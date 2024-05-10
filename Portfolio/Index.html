@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Nidhi's portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is
+          <span class="purple"> NIDHI</span>
+          <div>I'm a passionate</div>
+          <span id="element"></span>
+
+          <div class="buttons">
+            <button class="btn">Download resume</button>
+            <button class="btn">Visit GitHub</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="img1.jpg" alt="" />
+        </div>
+      </section>
+
+      <section id="About">
+        <div class="about-right-side">
+          <p class="kindof-animation"><span id="studentTypedText"></span></p>
+          <p class="kindof-animation"><span id="degreeTypedText"></span></p>
+          <p class="kindof-animation"><span id="developerTypedText"></span></p>
+          <!-- <p>I'm a student.</p>
+          <p>
+            Pursuing btech from Maharishi markendeshwar deemed to be University
+          </p>
+          <p>Full stack developer who wants to learn more and more</p> -->
+        </div>
+        <div class="about-left-side">
+          <img src="img11.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">what i have done so far</span>
+        <h1 id="Projects">Projects</h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="img3.png" alt="" />
+            <div class="vertical-title">HTML</div>
+            <div class="vertical-desc">
+              Explore my portfolio featuring a variety of projects, including an
+              Amazon clone, captivating landing pages for restaurants, and
+              immersive tour and travel experiences and many more projects just
+              based on HTML CSS and JS.
+            </div>
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="img4.png" alt="" />
+            <div class="vertical-title">React.js</div>
+            <div class="vertical-desc">
+              I've been working on cool stuff with React.js lately. One of my
+              projects is a clone of Gemini.I also created a website that mimics
+              a restaurant's landing page, but it's smart - it adjusts to fit
+              any screen size, whether you're on a computer, tablet, or phone.
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img5.png" alt="" />
+            <div class="vertical-title">Node.js</div>
+            <div class="vertical-desc">
+              "I'm building and learning with projects in Node.js using Express,
+              like a contact app management. I'm still learning as I go."
+            </div>
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="img6.png" alt="" />
+            <div class="vertical-title">SQL</div>
+            <div class="vertical-desc">
+              "I'm also diving into SQL, learning how to manage and organize
+              data effectively."
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="contact-us">
+        <h2>Reach Out To Me</h2>
+        <div id="Contact">
+          <img src="img7.png" alt="" />
+          <img src="img8.png" alt="" />
+          <img src="img9.jpg" alt="" />
+          <img src="img10.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Nidhi's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright-part">
+        <p>copyright &#169; 2023 Nidhi.All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Frontend Developer", " Backend developer"],
+        typeSpeed: 50,
+        backSpeed: 40,
+      });
+
+      var studentTyped = new Typed("#studentTypedText", {
+        strings: ["I'm a student."],
+        typeSpeed: 50,
+      });
+
+      var degreeTyped = new Typed("#degreeTypedText", {
+        strings: [
+          "Pursuing btech from Maharishi markendeshwar deemed to be University.",
+        ],
+        typeSpeed: 50,
+      });
+
+      var developerTyped = new Typed("#developerTypedText", {
+        strings: ["Full stack developer who wants to learn more and more."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
