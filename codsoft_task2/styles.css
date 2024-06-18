@@ -68,7 +68,6 @@ main hr {
   cursor: pointer;
   padding: 12px;
 }
-
 .rightSection img {
   width: 100%;
 }
@@ -187,4 +186,60 @@ footer {
   text-align: center;
   color: gray;
   padding: 12px 0;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .left,
+  .navbar .right {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar .right ul {
+    flex-direction: column;
+  }
+
+  .navbar .right ul li {
+    margin: 10px 0;
+  }
+
+  .firstSection,
+  .secondSection,
+  .contact-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .firstSection .leftSection,
+  .firstSection .rightSection,
+  .secondSection .box,
+  .contact-us div#Contact {
+    width: 100%;
+  }
+  .secondSection .box {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .firstSection .buttons,
+  .secondSection .text-gray,
+  .footer-first,
+  .footer-second {
+    margin-top: 20px;
+  }
+
+  .about-right-side,
+  .about-left-side,
+  .about-right-side p {
+    text-align: center;
+  }
 }
